@@ -7,10 +7,12 @@ export default class InputView {
 
   async readAnything() {
     try {
-      const input = await Console.readLineAsync('닉네임을 입력해주세요.');
+      const input = await Console.readLineAsync(InputView.MESSAGE.ASK_Q);
+      // inputValidator넣어도 됨
       return input;
     } catch (error) {
-      return error;
+      Console.print(error.message);
+      throw new Error('[ERROR] 로또 번호는 6개여야 합니다.');
     }
   }
 }

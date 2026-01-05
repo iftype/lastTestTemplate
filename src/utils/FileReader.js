@@ -19,7 +19,6 @@ export function readCSV(fileName) {
       return { nickname, timestamp };
     });
   } catch (error) {
-    // 4. 우테코 요구사항: 에러는 [ERROR]로 시작하는 메시지를 던져야 함
     throw new Error('[ERROR] 파일을 읽을 수 없습니다.');
   }
 }
