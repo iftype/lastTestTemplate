@@ -19,14 +19,14 @@ module.exports = {
     'prefer-const': 'error',
     'no-undef': 'warn',
     'no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
-    'no-console': 'warn',
+    'no-console': 'off',
     'no-process-exit': 'warn',
 
     'max-depth': ['warn', 2],
 
     'max-lines-per-function': [
       'warn',
-      { max: 15, skipBlankLines: true, skipComments: true },
+      { max: 20, skipBlankLines: true, skipComments: true },
     ],
     complexity: ['warn', 5],
     'class-methods-use-this': 'off',
