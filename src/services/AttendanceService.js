@@ -1,6 +1,6 @@
 // AttendanceService.js
-import { readCSV } from '../utils/fileReader.js';
 import Attendance from '../models/Attendance.js'; // Attendance 클래스를 가져와야 합니다.
+import { readCSV } from '../utils/fileReader.js';
 
 export default class AttendanceService {
   #attendances = [];
